@@ -13,5 +13,9 @@ Workshop Session One:
   - Unordered Lists
   - Same Page Links
   - Embedded Videos
-</ul>
+  
+  Project 1:
+  - About Lincoln website created
+  - Use of inline styling
+  - Use of new tags such as <hr>
 
