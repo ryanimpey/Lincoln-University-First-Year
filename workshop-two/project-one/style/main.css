@@ -1,3 +1,4 @@
+/* Global Styling Start */
 *{
 	margin: 0px;
 	padding: 0px; 
@@ -5,12 +6,20 @@
 body{
 	background-color: #363636;
 }
-.page-main{
-	position: relative;
-	z-index: -1;
-	margin: 0px 50px 0px 50px;
-	background-color: #E1F5C4;
+video{
+	position: static;
+	z-index: 2 !important;
 }
+a{
+	text-decoration: none;
+	color: white;
+}
+article{
+	margin-top: 10px;
+}
+/* Global Styling End */
+
+/* Header Styling Start */
 .page-header{
 	text-align: center;
 	background-color: #355C7D;
@@ -23,6 +32,9 @@ body{
 	font-weight: 100;
 	color: white;
 }
+/* Header Styling End */
+
+/* Nav Styling Start */
 .page-nav{
 	background-color: #355c7d;
 	height: 30px;
@@ -38,14 +50,22 @@ body{
 	display: inline;
 	padding: 5px;
 }
-a{
-	text-decoration: none;
-	color: white;
-}
 .nav-navbar li a:hover{
 	border-bottom: 1px solid white;
 }
-.page-profile{
+/* Nav Styling End */
+
+/* Main Area Styling Start */
+.page-main{
+	position: relative;
+	z-index: -1;
+	margin: 0px 50px 0px 50px;
+	background-color:;
+}
+/* Main Area Styling End */
+
+/* Profile Page Styling Start */
+.page-article{
 	padding-top: 20px;
 	clear: both;
 	background-color: #E1F5C4 !important;
@@ -53,30 +73,54 @@ a{
 .page-profile-img{
 	margin-right: 25px;
 }
-.page-profile img{
+.page-artice-imageHolder{
 	display: inline;
-	width: 250px;
+	width: 20%;
 	border-radius: 250px;
 	float: right;
 }
-video{
-	position: static;
-	z-index: 2 !important;
-}
-.page-profile-about{
+.page-profile-article{
 	margin-left: 25px;
 	font-family: roboto;
 	font-weight: 300;
+	padding-bottom: 25px;
+	clear: both;
 }
-.page-profile-about img{
+.page-profile-article img{
 	float: right;
 	margin-right: 50px;
+	border: 2px solid #363636;
 }
-.page-profile-about p{
+.page-profile-article p{
 	font-size: 18px;
 	padding-top: 10px;
 	width: 60%;
 }
-.page-profile-about hr{
+.page-profile-article hr{
+	width: 50%;
+}
+/* Profile Page Styling End */
+.page-profile-article-education{
+	clear: both;
+	margin-left: 25px;
+	font-family: roboto;
+	font-weight: 300;
+	padding-bottom: 25px;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.page-profile-article-education p{
+	float: right;
+	width: 60%;
+	text-align: right;
+	margin-right: 25px;
+}
+.page-article img{
+	display: inline;
+	width: 20%;
+	border-radius: 250px;
+}
+.page-profile-article-education hr{
+	margin-bottom: 10px;
 	width: 50%;
 }
