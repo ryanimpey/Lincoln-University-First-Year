@@ -1,0 +1,82 @@
+*{
+	margin: 0px;
+	padding: 0px; 
+}
+body{
+	background-color: #363636;
+}
+.page-main{
+	position: relative;
+	z-index: -1;
+	margin: 0px 50px 0px 50px;
+	background-color: #E1F5C4;
+}
+.page-header{
+	text-align: center;
+	background-color: #355C7D;
+	height: 10vh;
+}
+.page-header h1{
+	vertical-align: middle;
+	line-height: 10vh;
+	font-family: roboto;
+	font-weight: 100;
+	color: white;
+}
+.page-nav{
+	background-color: #355c7d;
+	height: 30px;
+	box-shadow: 0 5px 4px -2px #232323;
+	display: flex;
+	justify-content: center;
+}
+.nav-navbar{
+	font-family: roboto;
+	font-weight: 100;
+}
+.nav-navbar li{
+	display: inline;
+	padding: 5px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.nav-navbar li a:hover{
+	border-bottom: 1px solid white;
+}
+.page-profile{
+	padding-top: 20px;
+	clear: both;
+	background-color: #E1F5C4 !important;
+}
+.page-profile-img{
+	margin-right: 25px;
+}
+.page-profile img{
+	display: inline;
+	width: 250px;
+	border-radius: 250px;
+	float: right;
+}
+video{
+	position: static;
+	z-index: 2 !important;
+}
+.page-profile-about{
+	margin-left: 25px;
+	font-family: roboto;
+	font-weight: 300;
+}
+.page-profile-about img{
+	float: right;
+	margin-right: 50px;
+}
+.page-profile-about p{
+	font-size: 18px;
+	padding-top: 10px;
+	width: 60%;
+}
+.page-profile-about hr{
+	width: 50%;
+}
