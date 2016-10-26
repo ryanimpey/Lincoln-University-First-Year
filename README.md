@@ -1,5 +1,5 @@
-# web-authoring-compSci
-Repo for all Web Authoring workshop sessions
+# lincoln-first-year-compSci
+Repo for all Lincoln Uni workshop sessions
 Ryan Impey - 15591119
 
 Workshop Session One:
