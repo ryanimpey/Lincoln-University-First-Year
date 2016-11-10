@@ -8,6 +8,10 @@ html{
   height: 100vh;
 }
 
+section, aside, nav{
+  font-family: 'Roboto Condensed', helvetica;
+}
+
 .header-bar{
   width: 100%;
   background-color: #33b5e5;
@@ -39,7 +43,6 @@ html{
 .nav-list li{
   display: inline;
   padding: 0px 5px 0px 5px;
-  font-family: 'Roboto Condensed', helvetica;
   font-size: 28px;
 }
 
@@ -58,15 +61,75 @@ html{
   align-items: center;
   justify-content: center; 
   flex-direction: column;
-  font-family: 'Roboto Condensed', helvetica;
   color: white;
 }
 
 .section-slider-text-title{
-  font-size: 2em;
+  font-size: 1.7em;
   padding: 10px;
   border: 2px solid white;
 }
 
 .section-slider-text-subtitle{
+  text-align: center;
+}
+
+.section-slider-toggle-left{
+  float: left;
+  margin-left: 15px;
+}
+
+.section-slider-toggle-right{
+  float: right;
+  margin-right: 15px;
+}
+
+.section-slider-toggle-left, .section-slider-toggle-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  color: white;
+  font-size: 18px
+}
+
+@media screen and (max-width: 480px) {
+  .section-slider-toggle-left{
+    display: none;
+  }
+  .section-slider-toggle-right{
+    display: none;
+  }
+}
+
+.section-about{
+
+}
+
+.sidebar-contact{
+  float: right;
+  background-color: #2E2E2E;
+}
+
+.section-about{
+  text-align: center;
+  font
+}
+
+.sidebar-contact{
+  width:35%;
+  color: white;
+  font-weight: 300;
+  text-align: left;
+  margin: 
+}
+
+.sidebar-contact table, iframe, h2{
+  padding: 5px;
+}
+
+.sidebar-contact iframe{
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
 }
