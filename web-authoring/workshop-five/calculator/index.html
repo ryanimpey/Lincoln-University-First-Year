@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Calculator</title>
+		
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		
+		
+	</head>
+	
+	
+	<body>
+	
+		<main>
+			<section id="left-panel">
+				<input type="text" id="output" readonly value="5"/>
+				
+				<section id="button-panel">
+					<section class="row">
+						<button class="button" id="button-1">1</button>
+						<button class="button" id="button-2">2</button>
+						<button class="button" id="button-3">3</button>
+					</section>
+					<section class="row">
+						<button class="button" id="button-4">4</button>
+						<button class="button" id="button-5">5</button>
+						<button class="button" id="button-6">6</button>
+					</section>
+					<section class="row">
+						<button class="button" id="button-7">7</button>
+						<button class="button" id="button-8">8</button>
+						<button class="button" id="button-9">9</button>
+					</section>
+					<section class="row">
+						<button class="inactive-button"></button>
+						<button class="button" id="button-0">0</button>
+						<button class="inactive-button"></button>
+					</section>
+				</section>
+			</section>
+			
+			<aside id="right-panel">
+				<section id="operator-panel">
+					<button  class="operator" type="button" >+</button>
+					<button  class="operator" type="button" >-</button>
+					
+					<!-- Modify the lines below to also call a function -->
+					<button  class="operator" type="button" >x</button>
+					<button  class="operator" type="button" >/</button>
+					<!-- ... -->
+					
+					<button  class="operator" type="button" >C</button>
+					<button  class="operator" type="button" >=</button>
+				</section>
+			</aside>
+		</main>
+		<script type="text/javascript" src="functions.js" async></script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Character Selector</title>
+		
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		
+		<script type="text/javascript" src="game.js"></script>
+		
+	</head>
+	<body onkeydown="onKeyPressEvent(event)">
+		<main>
+			<div class="container">
+				<div class="head row">
+					<img id="head-image" src="images/x.png" />
+					<button class="left-button" onclick="onHeadChange(-1)">&laquo;</button>
+					<button class="right-button" onclick="onHeadChange(+1)">&raquo;</button>
+				</div>
+				<div class="torso row">
+					<img id="torso-image" src="images/o.png" />
+					<button class="left-button" onclick="onTorsoChange(+1)">&laquo;</button>
+					<button class="right-button" onclick="onTorsoChange(+1)">&raquo;</button>
+				</div>
+				<div class="legs row">
+					<img id="legs-image" src="images/o.png" />
+					<button class="left-button" onclick="onLegsChange(-1)">&laquo;</button>
+					<button class="right-button" onclick="onLegsChange(+1)">&raquo;</button>
+				</div>
+			</div>
+			
+			<input id="selector-box" type="text" value="h: 0 | t: 0 | l: 0" readonly />
+			<button class="selector button" onclick="randomizeBody()">Randomize</button>
+			<button class="selector button" onclick="saveSelection()">Save selection</button>
+			<button class="selector button" onclick="loadSelection()">Load selection</button>
+			<h4 style="text-align: center;">Total Changes: <span id="changeCount">0</span></h4>
+      <button class="selector button" onclick="resetCounter()">Reset Counter</button>
+		</main>				
+	</body>
+</html>

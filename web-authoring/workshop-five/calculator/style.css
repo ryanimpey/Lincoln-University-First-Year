@@ -1,0 +1,87 @@
+main
+{
+	background-color:white;
+	width:345px;
+	height:370px;
+	margin:0px auto;
+	margin-top:100px;
+	padding:15px;
+	border-radius:10px;
+}
+
+#left-panel
+{
+	float:left;
+}
+
+#right-panel
+{
+	float:right;
+	
+}
+
+#output
+{
+	font-size:24pt;
+	padding-left:5px;
+	width:230px;
+}
+
+.operator:hover
+{
+	background-color:#eee;
+	cursor:pointer;
+}
+
+.operator
+{
+	background-color:#ddd;
+	border:1px solid #aaa;
+	font-size:14pt;
+	display:block;
+	width:100px;
+	height:44px;
+	margin-bottom:5px;
+	border-radius:5px;
+}
+
+.row
+{
+	margin-top:5px;
+}
+
+.button:hover
+{
+	background-color:#eee;
+	cursor:pointer;
+}
+
+.inactive-button
+{
+	display:inline-block;
+	vertical-align:middle;
+	background-color:white;
+	width:75px;
+	height:75px;
+	border:0;
+}
+
+.button
+{
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+	line-height:75px;
+	background-color:white;
+	border:1px solid #ccc;
+	width:75px;
+	height:75px;
+	font-size:14pt;
+	font-family:"Arial", sans-serif;
+	border-radius:5px;
+}
+
+body
+{
+	background-color:rgba(0, 0, 0, 0.5);
+}
