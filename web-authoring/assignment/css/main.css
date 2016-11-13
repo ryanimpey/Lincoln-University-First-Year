@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 *{
   margin: 0px;
   padding: 0px; 
@@ -9,7 +11,8 @@ html{
 }
 
 section, aside, nav{
-  font-family: 'Roboto Condensed', helvetica;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
 }
 
 .header-bar{
@@ -132,4 +135,50 @@ section, aside, nav{
   width: 100%;
   margin: 0px !important;
   padding: 0px !important;
+}
+
+.section-about-img{
+  width: 20%
+}
+
+.section-about-text{
+  text-align: left;
+}
+
+.section-products{
+  background-color: #2E2E2E; 
+}
+
+.section-products h1{
+  text-align: center;
+  color: white;
+}
+
+.section-products-slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.section-products-slider li{
+  list-style: none;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.section-products-slider li img{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 250px; 
+}
+
+.section-products-slider p{
+    padding-top: 5px;
+}
+
+.section-products-slider li img:hover{
+  box-shadow: 0px 0px 20px #33b5e5;
 }
