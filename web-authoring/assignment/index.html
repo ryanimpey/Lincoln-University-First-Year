@@ -27,30 +27,56 @@
       </div>
     </section>
     <section class="section-products">
-      <h1>Products</h1>
+      <h1 class="section-products-title">Products</h1>
       <ul class="section-products-slider">
         <li>
-          <img src="img/car.jpg">
+          <a href="#circular-car">
+            <img src="img/car.jpg" id="circular-car" class="circular-shop">  
+          </a>
           <p>Cars</p>
         </li>
         <li>
-          <img src="img/cycle.jpg">
+          <a href="#circular-cycle">
+            <img src="img/cycle.jpg" id="circular-cycle" class="circular-shop">  
+          </a>
           <p>Cycles</p>
         </li>
         <li>
-          <img src="img/motorcycle.jpg">
+          <a href="#circular-motorcycle">
+            <img src="img/motorcycle.jpg" id="circular-motorcycle" class="circular-shop">  
+          </a>
           <p> Motorcycles</p>
         </li>
         <li>
-          <img src="img/yacht.jpg">
+          <a href="#circular-boat">
+            <img src="img/yacht.jpg" id="circular-boat" class="circular-shop">  
+          </a>
           <p>Boats</p>
         </li>
         <li>
-          <img src="img/jet.jpg">
+          <a href="#circular-planeb">
+            <img src="img/jet.jpg" id="circular-plane" class="circular-shop">  
+          </a>
           <p>Planes</p>
         </li>
       </ul>
     </section>
+    <section class="section-custom">
+      <div class="section-custom-left"></div>
+      <div class="section-custom-right">
+        <div class="section-custom-right-text">
+          <h2>Your Selection</h2><br>
+          <p>Your model has been displayed to your left, if you would like to view other models available, please use the left and right arrows displayed to switch between options. Once you are happy with your selection please press continue to display the customisation options.</p>
+          <i class="fa fa-chevron-left custom-arrow" aria-hidden="true"></i>
+          <i class="fa fa-chevron-right custom-arrow" aria-hidden="true"></i>
+          <br>
+          <button class="custom-confirm-button">Confirm</button>
+        </div>
+      </div>
+      
+    </section>
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

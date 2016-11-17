@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+@font-face{
+  font-family: 'robotoCond';
+  src: url(../fonts/robCond.ttf);
+}
 *{
   margin: 0px;
-  padding: 0px; 
+  padding: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html{
@@ -11,7 +18,7 @@ html{
 }
 
 section, aside, nav{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'robotoCond', sans-serif;
   font-weight: 300;
 }
 
@@ -24,19 +31,18 @@ section, aside, nav{
 
 .nav-left{
   float: left;
-  margin-left: 15px;
 }
 
 .nav-right{
   float: right;
-  margin-right: 15px;
 }
 
 .nav-left,.nav-right{
   font-size: 24px;
+  line-height: 50px;
 }
 
-.nav-list, div{
+.nav-list{
   height: 50px;
   display: flex;
   align-items: center;
@@ -168,7 +174,7 @@ section, aside, nav{
   font-size: 16px;
 }
 
-.section-products-slider li img{
+.section-products-slider li a img{
   width: 70%;
   display: block;
   margin: 0 auto;
@@ -179,6 +185,44 @@ section, aside, nav{
     padding-top: 5px;
 }
 
-.section-products-slider li img:hover{
+.section-products-slider li a img:hover{
   box-shadow: 0px 0px 20px #33b5e5;
+}
+
+.section-custom-left{
+  width: 65%;
+  height: 400px;
+  float: left;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-custom-right{
+  float: right;
+  width: 35%;
+  height: 400px;
+  background-color: #212121;
+}
+
+.section-custom-right-text{
+  height: inherit;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.custom-arrow{
+  font-size: 36px !important;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.custom-confirm-button{
+  width: 30%;
+  height: 40px;
+  border: 1px solid white;
+  color: white; 
+  border-radius: 5px;
+  background-color: transparent;
 }
