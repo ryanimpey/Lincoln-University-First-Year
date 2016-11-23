@@ -13,7 +13,6 @@
 }
 
 html{
-  width: 100vw;
   height: 100vh;
 }
 
@@ -22,19 +21,27 @@ section, aside, nav{
   font-weight: 300;
 }
 
-.header-bar{
+.header-bar, .footer-bar{
+  clear: both;
   width: 100%;
   background-color: #33b5e5;
   border-bottom: 2px solid #0099CC;
   height: 50px;
 }
 
+.footer-bar{
+  position: fixed;
+  bottom: 0px;
+}
+
 .nav-left{
   float: left;
+  padding-left: 15px;
 }
 
 .nav-right{
   float: right;
+  padding-right: 15px;
 }
 
 .nav-left,.nav-right{
@@ -178,7 +185,8 @@ section, aside, nav{
   width: 70%;
   display: block;
   margin: 0 auto;
-  border-radius: 250px; 
+  border-radius: 250px;
+  transition: box-shadow 0.5s cubic-bezier(0.2, 0.80, 0.45, 1); 
 }
 
 .section-products-slider p{
@@ -191,16 +199,17 @@ section, aside, nav{
 
 .section-custom-left{
   width: 65%;
-  height: 400px;
+  height: 575px;
   float: left;
   background-position: center center;
   background-size: cover;
+  background-image: url('https://img-new.cgtrader.com/items/36548/dc4c32cd9a/bmw-6-series-white-wireframe-car-3d-model-obj.jpg');
 }
 
 .section-custom-right{
   float: right;
   width: 35%;
-  height: 400px;
+  height: 575px;
   background-color: #212121;
 }
 
@@ -225,4 +234,45 @@ section, aside, nav{
   color: white; 
   border-radius: 5px;
   background-color: transparent;
+}
+
+canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.footer-title{
+  font-family: 'robotoCond', sans-serif;
+  text-align: center;
+  line-height: 50px; 
+}
+
+.customisation-table{
+  margin: 0 auto;
+}
+
+.customisation-table tr{
+  text-align: left;
+}
+
+.section-main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-main-about-box{
+  margin: 15px 0px 15px 0px;
+  width: 300px;
+  height: 300px;
+}
+
+.section-title, .section-box-title{
+  text-align: center;
+  font-family: RobotoCond; 
+}
+
+.section-main-about-box a img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
 }

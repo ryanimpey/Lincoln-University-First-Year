@@ -4,12 +4,11 @@ public class looping{
 
   public static void Main(string[] args){
 
-    int widgetQuantity = 0;
       float widgetPrice = 0;
 
       Console.WriteLine("Price of Widgets:");
 
-      while(widgetQuantity < 101){
+      for(int widgetQuantity = 0; widgetQuantity < 101; widgetQuantity+=10){
       
         if(widgetQuantity <= 50){
           widgetPrice = widgetQuantity*5;
@@ -25,7 +24,6 @@ public class looping{
 
         Console.WriteLine("Quantity: {0}", widgetQuantity);
         Console.WriteLine("Price: {0:c}", widgetPrice);
-        widgetQuantity += 10;
       }
 
     //Console.WriteLine("Please enter how many widgets you would like");
