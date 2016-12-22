@@ -93,6 +93,9 @@ class textAnalyser{
           break;
       }
     }
+    if(sentanceAmount == 0){
+    	sentanceAmount++
+    }
     return sentanceAmount.ToString();
   }
 
@@ -142,7 +145,21 @@ class textAnalyser{
   //calculate the area of a circle
   public void readFile()
   {
-    Console.WriteLine("Read file u cunt");
+    Console.WriteLine("Ok! Please enter the full path of the file you wish to read.\nPlease make sure it is a .txt file as well!\n(If you enter the phrase 'default' then a default file will open");
+    Console.Write("Text File path: ");
+    string userFilePath = Console.ReadLine();
+
+    switch(userFilePath){
+    	case "default":
+    		string defaultFilePath = "hello.txt";
+    		string[] memes = File.ReadAllLines(defaultFilePath);
+    		foreach(string i in memes){
+    			Console.WriteLine(i);
+    		}
+    		break;
+    	default:
+    		break;
+    }
   }
 
   public static void Main(){
