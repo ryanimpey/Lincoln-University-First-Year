@@ -50,10 +50,12 @@ class textAnalyser{
 
       case "no":
         Console.WriteLine("Ok! The Program will now terminate!");
+        deleteTextFile();
         break;
 
       default:
         Console.WriteLine("Unexpected input, taking input as a no! The Program will now terminate.");
+        deleteTextFile();
         break;
     }
   }
@@ -74,9 +76,10 @@ class textAnalyser{
     	}
 
     	Console.WriteLine("Found the letter {0} {1} times!", userEnteredLetter.ToUpper(), userLetterAmount);
-
+    	deleteTextFile();
   	} catch(Exception e){
-  		Console.WriteLine("Unexpected Input! Error Code {0}", e);	
+  		Console.WriteLine("Unexpected Input! Error Code {0}", e);
+  		deleteTextFile();
   	}
 
   }
@@ -94,7 +97,7 @@ class textAnalyser{
       }
     }
     if(sentanceAmount == 0){
-    	sentanceAmount++
+    	sentanceAmount++;
     }
     return sentanceAmount.ToString();
   }
@@ -142,24 +145,51 @@ class textAnalyser{
     return lowerAmount.ToString();
   }
 
+  public string returnLongWords(string enteredTextString){
+  	string[] enteredTextConvert;
+  	enteredTextConvert = enteredTextString.Split(' ');
+  	int longWordAmount = 0;
+  	foreach(string i in enteredTextConvert){
+      if(i.Length > 7){
+      	longWordAmount++;
+      	File.AppendAllText("longWords.txt", i + Environment.NewLine);
+      }
+    }
+    return longWordAmount.ToString();
+  }
+
   //calculate the area of a circle
   public void readFile()
   {
     Console.WriteLine("Ok! Please enter the full path of the file you wish to read.\nPlease make sure it is a .txt file as well!\n(If you enter the phrase 'default' then a default file will open");
     Console.Write("Text File path: ");
     string userFilePath = Console.ReadLine();
-
     switch(userFilePath){
     	case "default":
-    		string defaultFilePath = "hello.txt";
-    		string[] memes = File.ReadAllLines(defaultFilePath);
-    		foreach(string i in memes){
-    			Console.WriteLine(i);
-    		}
+    		string defaultFilePath = "default.txt";
+    		string[] defaultFileRead = File.ReadAllLines(defaultFilePath);
+    		string defaultFileString = string.Join("", defaultFileRead);
+    		Console.WriteLine("Found {0} word(s) with a length greater than 7!", returnLongWords(defaultFileString)); 
+    		basicResponse(defaultFileString);
     		break;
     	default:
+    		try{
+
+    			string[] userFileRead = File.ReadAllLines(userFilePath);
+    			string userFileString = string.Join("", userFileRead);
+    			Console.WriteLine("Found {0} words with a length greater than 7!", returnLongWords(userFileString)); 
+    			basicResponse(userFileString);
+
+    		} catch(Exception e){
+    			Console.WriteLine("\nEncountered an error trying to read file, are you sure you have specified the correct file/directory?\n Returning you to previous input");
+    			readFile();
+    		}
     		break;
     }
+  }
+
+  public void deleteTextFile(){
+  	File.Delete("enteredText.txt");
   }
 
   public static void Main(){
