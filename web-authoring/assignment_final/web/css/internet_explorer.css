@@ -1,0 +1,36 @@
+/* IE Styling */
+#product-menu{
+  height: 60px;
+}
+
+.product-sidebar-text{
+  display: block;
+}
+
+.nav-menu-opener{
+  left: 0;
+  top: 0;
+  margin-top: 17px;
+  margin-left: 17px;
+}
+
+/* End IE Styling */
+
+/* IE Website Resizing */
+@media screen and (max-width: 600px) {
+
+  #product-holder{
+    margin-top: 200px;
+  }
+
+  #product-menu ul{
+    position: relative;
+    margin-top: 180px;
+  }
+
+  #header-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

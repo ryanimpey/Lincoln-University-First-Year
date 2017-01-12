@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load CSS Section -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- End Load CSS Section -->
+    <title>Ryan Impey Products | Boats</title>
+  </head>
+  <body>
+    <!-- Sidenav Area -->
+    <aside class="hidden-sidenav">
+      <header class="hidden-sidenav-header navbar">
+        <button type="button" class="nav-menu-closer"><i class="material-icons">&#xE5CD;</i></button>
+        <h1 class="logo-navbar-menu ">{Website}</h1>
+      </header>
+      <div>
+        <ul class="open-sans">
+          <li><a href="./index.html">Home <i class="material-icons icon-small">&#xE88A;</i></a></li>
+          <li><a href="./demo.html">Demo <i class="material-icons icon-small">&#xE87C;</i></a></li>
+          <li><a href="./products.html">Products <i class="material-icons icon-small">&#xE896;</i></a></li>
+          <li><a href="./help.html">Help <i class="material-icons icon-small">&#xE887;</i></a></li>
+          <li><a href="./contact.html">Contact <i class="material-icons icon-small">&#xE0CD;</i></a></li>
+          <li class="cart-toggle"><a href="#">Cart <i class="material-icons icon-small">&#xE8CC;</i></a></li>
+        </ul>
+        <button type="button" name="button" class="place-order">Place Order</button>
+      </div>
+    </aside>
+    <!-- End Sidenav Area -->
+
+    <!-- Cart Sidenav Area -->
+    <aside class="cart-sidenav">
+      <header class="hidden-sidenav-header">
+        <button type="button" class="cart-menu-closer"><i class="material-icons">&#xE5CD;</i></button>
+        <h1 class="logo-navbar-menu center-text">Your Cart</h1>
+        <button type="button" name="button" class="place-order">Place Order</button>
+      </header>
+      <h1 class="open-sans">Shopping Cart</h1>
+      <p class="open-sans">Drop here to add your items to the cart</p>
+      <p id="cartTotal" class="total open-sans">Total: £0</p>
+        <div class="cart-drop-area">
+          <h3 class="center-text open-sans">Drop items here to add them to the cart!</h3>
+        </div>
+          <table id="cartcontent">
+            <thead>
+              <tr>
+                <th field="name" class="center-text open-sans">Name</th>
+                <th field="quantity" class="center-text open-sans">Quantity</th>
+                <th field="price" class="center-text open-sans">Price</th>
+              </tr>
+            </thead>
+          </table>
+        <div id="previous-cart">
+          <h3 class="open-sans center-text">Your previous items have been stored here for you!</h3>
+          <table class="open-sans center-text">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="previous-cart-append">
+            </tbody>
+          </table>
+        </div>
+    </aside>
+    <!-- End Cart Sidenav Area -->
+    <header>
+      <nav class="navbar" id="header-nav">
+        <button type="button" class="nav-menu-opener" ><i class="material-icons white">&#xE5D2;</i></button>
+        <ul class="inline-navbar-menu open-sans">
+          <li><a href="./index.html">Home <i class="material-icons icon-small">&#xE88A;</i></a></li>
+          <li><a href="./demo.html">Demo <i class="material-icons icon-small">&#xE87C;</i></a></li>
+          <li><a href="./products.html">Products <i class="material-icons icon-small">&#xE896;</i></a></li>
+        </ul>
+        <h1 class="logo-navbar-menu white">{Website}</h1>
+        <ul class="inline-navbar-menu open-sans">
+          <li><a href="./help.html">Help <i class="material-icons icon-small">&#xE887;</i></a></li>
+          <li><a href="./contact.html">Contact <i class="material-icons icon-small">&#xE0CD;</i></a></li>
+          <li class="cart-toggle"><a href="#">Cart <i class="material-icons icon-small">&#xE8CC;</i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="image-carousel">
+      <div class="image-carousel-title open-sans white">
+        <span>Your Ride. Your Choice.</span>
+      </div>
+      <div class="open-sans white">
+        <span>Customise your ride today with 72 hour turnover.</span>
+      </div>
+    </section>
+    <main>
+      <nav class="navbar inline-menu open-sans center-text" id="product-menu">
+        <ul>
+          <li><a href="./cars.html">Cars</a></li>
+          <li><a href="./cycles.html">Cycles</a></li>
+          <li><a href="./bikes.html">Motorcycles</a></li>
+          <li><a href="./boats.html">Boats</a></li>
+          <li><a href="./planes.html">Planes</a></li>
+        </ul>
+      </nav>
+      <section id="product-holder">
+        <p class="open-sans center-text">Boats on Offer</p>
+      </section>
+      <section class="preview-holder">
+        <h4 class="open-sans center-text">Sorry! No Boats available yet. Please check back soon</h4>
+        <h3 class="open-sans center-text"><a href="./index.html" style="color:black">Return Home</a></h3>
+      </section>
+    </main>
+    <footer id="page-footer">
+      <nav id="footer-inline-menu" class="open-sans center-text">
+        <ul>
+          <li><a href="./index.html">Home <i class="material-icons icon-small">&#xE88A;</i></a></li>
+          <li><a href="./demo.html">Demo <i class="material-icons icon-small">&#xE87C;</i></a></li>
+          <li><a href="./index.html">{Website}</a></li>
+          <li><a href="./help.html">Help <i class="material-icons icon-small">&#xE887;</i></a></li>
+          <li><a href="./contact.html">Contact <i class="material-icons icon-small">&#xE0CD;</i></a></li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- Load JS Section -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <!-- End Load JS Section -->
+    <!--[if IE]>
+    <style>html{font-size: 128px;}</style>
+<![endif]-->
+  </body>
+</html>
